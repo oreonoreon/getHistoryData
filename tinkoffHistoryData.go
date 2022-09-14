@@ -9,8 +9,9 @@ import (
 	"os"
 )
 
-func historyData(Figi string) {
-	token := "t.yIDgyFK0WY0lmEQ76djHQRjNONyVBsB34gqdTmZrfdKTdhH0sz1nH9momdp1mCWn-mk7xLaQRym-xJXHDLTZYw"
+//token = Tinkoff sandbox Token
+func historyData(Figi string, Token string) {
+	token := Token
 	//Url := "https://invest-public-api.tinkoff.ru/history-data?figi=BBG000B9XRY4&year=2022"
 	u := url.Values{}
 	u.Add("figi", Figi)
